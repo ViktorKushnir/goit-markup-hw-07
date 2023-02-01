@@ -241,39 +241,16 @@ nav > a {
 
 /*------------------- section 3------------------------- */
 
-.section-3 {
-  padding-bottom: 120px;
-}
-
-.work {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 1.1;
-
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-
-  color: var(--title);
-}
-
-.section-3-content {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-
-/* section 4 */
+/*--------------------- section 4 -----------------------*/
 
 .section-4 {
   background-color: var(--background-section4);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 128px;
 }
 
 .team {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
 
@@ -285,15 +262,20 @@ nav > a {
 }
 
 .team-card {
+  width: 264px;
   background-color: #ffffff;
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .team-card h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 8px;
@@ -302,13 +284,15 @@ nav > a {
 }
 
 .team-card p {
+  font-size: 16px;
   color: var(--text);
   margin-bottom: 8px;
 }
 
 .section-4-content {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 
@@ -355,23 +339,20 @@ nav > a {
 }
 
 .customers {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
   justify-content: center;
 }
 
-.customers-item {
+.customers-link {
   width: 168px;
   height: 88px;
-}
-
-.customers-link {
-  width: 100%;
-  height: 100%;
   border: 1px solid currentColor;
   border-radius: 4px;
   display: flex;
@@ -400,37 +381,37 @@ footer .logo-studio {
 .footer-content > p {
   color: var(--footer-text);
   margin-top: 16px;
-  margin-left: 0%;
 }
 
 .footer-social-div > h2 {
   color: #ffffff;
   font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 16px;
 }
 
 .footer {
   background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-content {
-  width: 264px;
-  height: 110px;
-}
-
-.footer-social1 {
-  display: flex;
+  width: 268px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .footer-social-div {
-  margin-left: 120px;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 .footer-social {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .footer-social-item {
@@ -464,26 +445,19 @@ footer .logo-studio {
 .subscription-form {
   display: flex;
   flex-direction: column;
-  width: 453px;
-  height: 80px;
-
-  margin-left: 80px;
-
-  gap: 16px;
-}
-
-.subscription-div {
-  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .subscription-email {
-  width: 264px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscription-title {
@@ -491,6 +465,7 @@ footer .logo-studio {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .subscription-btn {
@@ -501,7 +476,7 @@ footer .logo-studio {
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
-  margin-left: 24px;
+  margin: 0 auto;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -876,14 +851,14 @@ h2 {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tabl.jpg);
-      padding-bottom: 108px;
+    padding-bottom: 108px;
   }
 
   .solution-Business {
     width: 494px;
     font-size: 56px;
     line-height: 1;
-margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -908,10 +883,74 @@ margin-bottom: 40px;
   }
   .section2-content > li {
     width: 351px;
-
   }
   .title {
     text-align: start;
+  }
+
+  /* -----------------------SECTION-4---------------- */
+
+  .section-4 {
+    padding-bottom: 104px;
+  }
+
+  .section-4-content {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  .team-card {
+    margin-bottom: 0px;
+  }
+  /* -----------------------SECTION-5--------------- */
+
+  .customers {
+    width: 552px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  /* -------------------FOOTER---------------------- */
+
+  .footer-social1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footer-content {
+    text-align: start;
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .footer-social-div {
+    text-align: start;
+    margin-left: 24px;
+  }
+
+  .subscription-div {
+    display: flex;
+  }
+
+  .subscription-email {
+    width: 264px;
+  }
+
+  .subscription-form {
+    text-align: start;
+  }
+
+  .subscription-btn {
+    height: 40px;
+    margin-left: 24px;
   }
 }
 
@@ -946,7 +985,7 @@ margin-bottom: 40px;
     margin-bottom: 48px;
   }
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-1 {
@@ -994,5 +1033,70 @@ margin-bottom: 40px;
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 0;
+  }
+
+  /* ---------------SECTION-3-------------------- */
+
+  main .section-3 {
+    padding-bottom: 120px;
+  }
+
+  .work {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+
+    color: var(--title);
+  }
+
+  .section-3-content {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* --------------------SECTION-4-------------------- */
+
+  .section-4 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* ------------------------SECTION-5----------------- */
+  .customers {
+    padding: 120px 0;
+  }
+  .customers-item {
+    display: block;
+  }
+
+  /* -------------------FOOTER----------------- */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-content {
+    margin-bottom: 0;
+  }
+
+  .footer-social-div {
+    margin-left: 120px;
+    margin-bottom: 0;
+  }
+  .subscription-form {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .section-3 {
+    display: none;
   }
 }
