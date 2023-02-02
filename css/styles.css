@@ -41,13 +41,12 @@ body {
   margin: 0 auto;
 }
 
-/* header */
+/*-------------------------- header -------------------*/
 
 .header {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
-  /* display: flex; */
 
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -59,7 +58,7 @@ body {
   align-items: center;
 }
 
-/* logo */
+/* --------------------------logo----------------------- */
 
 .logo-web {
   font-family: Raleway, sans-serif;
@@ -108,7 +107,6 @@ body {
 .mob-menu {
   position: fixed;
   top: 0;
-  /* left: 50%; */
   width: 100vw;
   height: 100vh;
 
@@ -116,7 +114,6 @@ body {
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  /* transform: translate(-50%, -50%) scale(1); */
   padding: 40px;
 
   transition: transform var(--hover-time);
@@ -131,7 +128,6 @@ body {
 }
 
 .mob-menu-close {
-  /* position: absolute; */
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
@@ -232,14 +228,15 @@ body {
 .mob-menu-icon {
   fill: #f4f4fd;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /* main */
 
 /* -----------------------SECTION1----------------- */
 
 .section-1 {
-  width: 428px;
-  height: 432px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -591,22 +588,22 @@ footer .logo-studio {
   background-color: var(--nav-hover);
 }
 
-/* PORTFOLIO */
+/* =================================PORTFOLIO */
 
-/* section 1 */
+/* ================================section 1 */
 
 .portfolio-section1 {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .portfolio-section1-nav {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   gap: 24px;
+  row-gap: 16px;
 }
 
 .filters-button {
@@ -641,7 +638,6 @@ footer .logo-studio {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
 }
 
 h2 {
@@ -935,6 +931,10 @@ h2 {
 
   /* --------------------HEADER------------------------ */
 
+  .header {
+    display: flex;
+    justify-content: center;
+  }
   .menu-open {
     display: none;
   }
@@ -945,18 +945,11 @@ h2 {
   nav > a {
     margin-right: 120px;
   }
-  /* .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
   .nav {
     font-weight: 600;
     text-decoration: none;
     display: flex;
     gap: 40px;
-    /* display: none; */
   }
 
   .nav-link {
@@ -991,8 +984,6 @@ h2 {
   .contact {
     display: flex;
     flex-direction: column;
-    /* gap: 40px; */
-    /* display: none; */
   }
   .contact-contact {
     font-weight: 400;
@@ -1081,6 +1072,28 @@ h2 {
     column-gap: 24px;
   }
 
+  /* --------------------PORTFOLIO--------------------- */
+
+  .portfolio-section1 {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .project-card {
+    width: 356px;
+  }
+
+  .portfolio-section1-nav {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-project {
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: center;
+  }
+
   /* -------------------FOOTER---------------------- */
 
   .footer-social1 {
@@ -1135,10 +1148,10 @@ h2 {
     gap: 40px;
   }
 
- .header-content {
-  padding-left: 156px;
-  padding-right: 156px;
- }
+  .header-content {
+    padding-left: 156px;
+    padding-right: 156px;
+  }
   /* -------------------------SECTION-1--------------- */
 
   .section-1 {
@@ -1251,6 +1264,18 @@ h2 {
   }
   .customers-item {
     display: block;
+  }
+
+  /* --------------------PORTFOLIO------------------- */
+
+  .portfolio-project {
+    justify-content: center;
+    row-gap: 48px;
+  }
+
+  .portfolio-section1 {
+    padding-top: 96px;
+    padding-bottom: 120px;
   }
 
   /* -------------------FOOTER----------------- */
