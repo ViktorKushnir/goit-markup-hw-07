@@ -156,11 +156,11 @@ body {
   line-height: 1.1;
 
   letter-spacing: 0.02em;
-  color: var(--title);
   margin-bottom: 100px;
 }
 
 .mob-menun-nav {
+  color: var(--title);
   cursor: pointer;
   transition: color var(--hover-time);
   margin-bottom: 24px;
@@ -194,6 +194,7 @@ body {
 .mob-menu-tel {
   font-weight: 600;
   font-size: 36px;
+  color: #4d5ae5;
   line-height: 1.1;
   margin-bottom: 40px;
   text-decoration: none;
@@ -204,7 +205,6 @@ body {
 
 .mob-menu-soc {
   display: flex;
-  justify-content: center;
   gap: 56px;
 }
 .mob-menu-item {
@@ -232,7 +232,7 @@ body {
   overflow: hidden;
 }
 
-/* main */
+/* -----------------------main-------------- */
 
 /* -----------------------SECTION1----------------- */
 
@@ -306,7 +306,7 @@ body {
 
 .section-2 {
   padding-top: 96px;
-  padding-bottom: 24px;
+  padding-bottom: 96px;
 }
 
 .title {
@@ -322,8 +322,8 @@ body {
 .description {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 72px;
 }
+
 .section-2-item {
   display: none;
 }
@@ -360,7 +360,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .team-card h3 {
@@ -440,7 +439,7 @@ body {
 }
 
 .customers-link {
-  width: 168px;
+  width: 190px;
   height: 88px;
   border: 1px solid currentColor;
   border-radius: 4px;
@@ -461,7 +460,7 @@ body {
   color: #404bbf;
 }
 
-/*--------- footer--------- */
+/*--------- ---------------------footer--------- */
 
 footer .logo-studio {
   color: #f4f4fd;
@@ -931,9 +930,8 @@ h2 {
 
   /* --------------------HEADER------------------------ */
 
-  .header {
-    display: flex;
-    justify-content: center;
+  .header-content {
+    position: relative;
   }
   .menu-open {
     display: none;
@@ -979,14 +977,19 @@ h2 {
     color: var(--nav-hover);
   }
 
-  /* contact */
+  /* ----------------contact */
 
   .contact {
+    position: absolute;
+    right: 15px;
     display: flex;
     flex-direction: column;
   }
   .contact-contact {
     font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+
     color: var(--text);
     text-decoration: none;
     transition: color var(--hover-time);
@@ -1056,12 +1059,12 @@ h2 {
   }
 
   .team-card {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
+
   /* -----------------------SECTION-5--------------- */
 
   .customers {
-    width: 552px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1071,6 +1074,12 @@ h2 {
   .customers-list {
     column-gap: 24px;
   }
+
+  .customers-link {
+    width: 168px;
+  }
+
+  /* ------------footer------------------ */
 
   /* --------------------PORTFOLIO--------------------- */
 
@@ -1096,11 +1105,13 @@ h2 {
 
   /* -------------------FOOTER---------------------- */
 
+  .footer {
+    padding-left: 108px;
+  }
+
   .footer-social1 {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
   }
 
   .footer-content {
@@ -1136,7 +1147,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1440px;
+    width: 1158px;
   }
   nav > a {
     margin-right: 76px;
@@ -1148,14 +1159,10 @@ h2 {
     gap: 40px;
   }
 
-  .header-content {
-    padding-left: 156px;
-    padding-right: 156px;
-  }
   /* -------------------------SECTION-1--------------- */
 
   .section-1 {
-    width: 1440px;
+    width: 1158px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(
@@ -1283,9 +1290,11 @@ h2 {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 0px;
   }
 
   .footer-content {
+    width: 264px;
     margin-bottom: 0;
   }
 
@@ -1301,5 +1310,15 @@ h2 {
 @media screen and (min-width: 0px) and (max-width: 1200px) {
   .section-3 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .team-card:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .section2-content li:not(:last-child) {
+    margin-bottom: 72px;
   }
 }
